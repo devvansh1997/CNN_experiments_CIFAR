@@ -1,0 +1,29 @@
+experiment_name: "cnn_experiments_cifar"
+log_wandb: true
+
+# training params
+batch_size: 128
+epochs: 30
+learning_rate: 0.01
+momentum: 0.9
+weight_decay: 0.0005
+lr_scheduler:
+  use: true
+  step_size: 10
+  gamma: 0.1
+
+# model config
+model:
+  type: "cnn_small"   # "cnn_small" or "cnn_large"
+  save_path: "./outputs/checkpoints"
+
+# dataset
+dataset:
+  name: "CIFAR10"
+  data_dir: "./data"
+  num_workers: 0
+  pin_memory: false
+
+# loggin and output
+output_dir: "./outputs"
+save_best_model: true
