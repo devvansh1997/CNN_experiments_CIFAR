@@ -1,0 +1,11 @@
+----- W&B Initialized -----
+----- Dataset Loaded -----
+----- Begin Training -----
+Traceback (most recent call last):
+  File "/Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/main.py", line 70, in <module>
+    train_loss, train_acc = train_one_epoch(
+                            ^^^^^^^^^^^^^^^^
+  File "/Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/utils/train.py", line 13, in train_one_epoch
+    images, labels = images.to(device), labels.to(device)
+                     ^^^^^^
+UnboundLocalError: cannot access local variable 'images' where it is not associated with a value

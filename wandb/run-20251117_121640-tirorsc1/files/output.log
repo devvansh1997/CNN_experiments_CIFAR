@@ -1,0 +1,30 @@
+----- W&B Initialized -----
+----- Dataset Loaded -----
+----- Begin Training -----
+Epoch 1/30 | Train Acc: 0.3170 | Test Acc: 0.4676
+Epoch 2/30 | Train Acc: 0.4760 | Test Acc: 0.5440
+Epoch 3/30 | Train Acc: 0.5590 | Test Acc: 0.6429
+Epoch 4/30 | Train Acc: 0.6200 | Test Acc: 0.6692
+Epoch 5/30 | Train Acc: 0.6619 | Test Acc: 0.6961
+Epoch 6/30 | Train Acc: 0.6872 | Test Acc: 0.7273
+Epoch 7/30 | Train Acc: 0.7115 | Test Acc: 0.7306
+Epoch 8/30 | Train Acc: 0.7261 | Test Acc: 0.7565
+Epoch 9/30 | Train Acc: 0.7421 | Test Acc: 0.7599
+Epoch 10/30 | Train Acc: 0.7528 | Test Acc: 0.7673
+Traceback (most recent call last):
+  File "/Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/main.py", line 70, in <module>
+    train_loss, train_acc = train_one_epoch(
+                            ^^^^^^^^^^^^^^^^
+  File "/Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/utils/train.py", line 21, in train_one_epoch
+    loss.backward()
+  File "/Users/dev/ML/lib/python3.12/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "/Users/dev/ML/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/Users/dev/ML/lib/python3.12/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dev/ML/lib/python3.12/site-packages/wandb/integration/torch/wandb_torch.py", line 276, in <lambda>
+    handle = var.register_hook(lambda grad: _callback(grad, log_track))
+
+KeyboardInterrupt

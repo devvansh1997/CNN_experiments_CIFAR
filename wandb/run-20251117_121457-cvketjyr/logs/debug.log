@@ -1,0 +1,24 @@
+2025-11-17 12:14:57,645 INFO    MainThread:29920 [wandb_setup.py:_flush():81] Current SDK version is 0.22.3
+2025-11-17 12:14:57,645 INFO    MainThread:29920 [wandb_setup.py:_flush():81] Configure stats pid to 29920
+2025-11-17 12:14:57,645 INFO    MainThread:29920 [wandb_setup.py:_flush():81] Loading settings from /Users/dev/.config/wandb/settings
+2025-11-17 12:14:57,645 INFO    MainThread:29920 [wandb_setup.py:_flush():81] Loading settings from /Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/wandb/settings
+2025-11-17 12:14:57,645 INFO    MainThread:29920 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-11-17 12:14:57,645 INFO    MainThread:29920 [wandb_init.py:setup_run_log_directory():706] Logging user logs to /Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/wandb/run-20251117_121457-cvketjyr/logs/debug.log
+2025-11-17 12:14:57,646 INFO    MainThread:29920 [wandb_init.py:setup_run_log_directory():707] Logging internal logs to /Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/wandb/run-20251117_121457-cvketjyr/logs/debug-internal.log
+2025-11-17 12:14:57,646 INFO    MainThread:29920 [wandb_init.py:init():833] calling init triggers
+2025-11-17 12:14:57,646 INFO    MainThread:29920 [wandb_init.py:init():838] wandb.init called with sweep_config: {}
+config: {'experiment_name': 'cnn_experiments_cifar', 'run_name': 'cnn_small', 'log_wandb': True, 'device': 'cpu', 'batch_size': 128, 'epochs': 30, 'learning_rate': 0.01, 'momentum': 0.9, 'weight_decay': 0.0005, 'lr_scheduler': {'use': True, 'step_size': 10, 'gamma': 0.1}, 'model': {'type': 'cnn_small', 'save_path': './outputs/checkpoints'}, 'dataset': {'name': 'CIFAR10', 'data_dir': './data', 'num_workers': 0, 'pin_memory': False}, 'output_dir': './outputs', 'save_best_model': True, '_wandb': {}}
+2025-11-17 12:14:57,646 INFO    MainThread:29920 [wandb_init.py:init():881] starting backend
+2025-11-17 12:14:58,283 INFO    MainThread:29920 [wandb_init.py:init():884] sending inform_init request
+2025-11-17 12:14:58,319 INFO    MainThread:29920 [wandb_init.py:init():892] backend started and connected
+2025-11-17 12:14:58,322 INFO    MainThread:29920 [wandb_init.py:init():962] updated telemetry
+2025-11-17 12:14:58,349 INFO    MainThread:29920 [wandb_init.py:init():986] communicating run to backend with 90.0 second timeout
+2025-11-17 12:14:59,291 INFO    MainThread:29920 [wandb_init.py:init():1033] starting run threads in backend
+2025-11-17 12:14:59,338 INFO    MainThread:29920 [wandb_run.py:_console_start():2506] atexit reg
+2025-11-17 12:14:59,338 INFO    MainThread:29920 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-11-17 12:14:59,339 INFO    MainThread:29920 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-11-17 12:14:59,339 INFO    MainThread:29920 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-11-17 12:14:59,340 INFO    MainThread:29920 [wandb_init.py:init():1073] run started, returning control to user process
+2025-11-17 12:15:00,967 INFO    MainThread:29920 [wandb_watch.py:_watch():68] Watching
+2025-11-17 12:15:01,013 INFO    wandb-AsyncioManager-main:29920 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-17 12:15:01,013 INFO    wandb-AsyncioManager-main:29920 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

@@ -1,0 +1,89 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            lxs6e6q2m31x94v7ayz5mst7mzclamoh:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 7
+                    memoryGb: 8
+                    name: Apple M1
+                    pcpuCores: 4
+                    ramTotalBytes: "8589934592"
+                    swapTotalBytes: "3221225472"
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "245107195904"
+                        used: "208503336960"
+                email: devansh.sharma1997@gmail.com
+                executable: /Users/dev/ML/bin/python
+                git:
+                    commit: 85d22e5492272eab35c12a53e932a1f32d057bac
+                    remote: git@github.com:devvansh1997/CNN_experiments_CIFAR.git
+                host: Devanshs-MacBook-Air-2.local
+                memory:
+                    total: "8589934592"
+                os: macOS-26.1-arm64-arm-64bit
+                program: /Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR/main.py
+                python: CPython 3.12.2
+                root: /Users/dev/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/Fall'25/ComputerVision/CNN_experiments_CIFAR
+                startedAt: "2025-11-17T17:14:57.641450Z"
+                writerId: lxs6e6q2m31x94v7ayz5mst7mzclamoh
+        m: []
+        python_version: 3.12.2
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 1
+                - 13
+                - 16
+            "4": 3.12.2
+            "5": 0.22.3
+            "12": 0.22.3
+            "13": darwin-arm64
+batch_size:
+    value: 128
+dataset:
+    value:
+        data_dir: ./data
+        name: CIFAR10
+        num_workers: 0
+        pin_memory: false
+device:
+    value: cpu
+epochs:
+    value: 30
+experiment_name:
+    value: cnn_experiments_cifar
+learning_rate:
+    value: 0.01
+log_wandb:
+    value: true
+lr_scheduler:
+    value:
+        gamma: 0.1
+        step_size: 10
+        use: true
+model:
+    value:
+        save_path: ./outputs/checkpoints
+        type: cnn_small
+momentum:
+    value: 0.9
+output_dir:
+    value: ./outputs
+run_name:
+    value: cnn_small
+save_best_model:
+    value: true
+weight_decay:
+    value: 0.0005
