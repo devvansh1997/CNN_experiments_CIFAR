@@ -22,7 +22,7 @@ Weights & Biases (W&B) was used to track losses, accuracy curves, and parameter 
 
 ---
 
-## 🚀 Results Summary
+## Results Summary
 
 ### Accuracy Comparison (30 epochs)
 
