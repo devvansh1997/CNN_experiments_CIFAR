@@ -8,6 +8,7 @@ from utils.dataset import get_dataLoaders
 from utils.train import train_one_epoch, evaluate
 from models.cnn_large import CNN_Large
 from models.cnn_small import CNN_Small
+from models.cnn_xl import CNN_XL
 
 # Load Config
 with open("config/default.yaml") as f:
@@ -37,6 +38,8 @@ if cfg["model"]["type"] == "cnn_small":
     model = CNN_Small().to(device)
 elif cfg["model"]["type"] == "cnn_large":
     model = CNN_Large().to(device)
+elif cfg["model"]["type"] == "cnn_xl":
+    model = CNN_XL().to(device)
 else:
     raise ValueError("Unknown model type")
 

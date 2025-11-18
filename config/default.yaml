@@ -1,5 +1,5 @@
 experiment_name: "cnn_experiments_cifar"
-run_name: "cnn_small" # or "cnn_large"
+run_name: "cnn_xl" # "cnn_small" or "cnn_large"
 log_wandb: true
 
 # training params
@@ -15,7 +15,7 @@ lr_scheduler:
 
 # model config
 model:
-  type: "cnn_small"   # "cnn_small" or "cnn_large"
+  type: "cnn_xl"   # "cnn_small" or "cnn_large"
   save_path: "./outputs/checkpoints"
 
 # dataset
